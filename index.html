@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steije G.G. Jansen op de Haar | CV — Software & Data</title>
+    <meta
+      name="description"
+      content="CV van Steije G.G. Jansen op de Haar: softwareontwikkeling, data-analyse, Python, Go, SQL en technische projectervaring."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Steije G.G. Jansen op de Haar" />
+    <meta name="theme-color" content="#2f5dff" />
+    <link rel="canonical" href="https://gauvain01.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nl_NL" />
+    <meta property="og:site_name" content="Steije Jansen op de Haar - CV" />
+    <meta
+      property="og:title"
+      content="Steije G.G. Jansen op de Haar | Software & Data Profiel"
+    />
+    <meta
+      property="og:description"
+      content="Professioneel profiel met ervaring in softwareontwikkeling, data-analyse en technische projecten."
+    />
+    <meta property="og:url" content="https://gauvain01.github.io/" />
+    <meta
+      property="og:image"
+      content="https://gauvain01.github.io/assets/og-image.svg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Steije G.G. Jansen op de Haar | Software & Data Profiel"
+    />
+    <meta
+      name="twitter:description"
+      content="Profiel met focus op software, data en analytisch probleemoplossen."
+    />
+    <meta
+      name="twitter:image"
+      content="https://gauvain01.github.io/assets/og-image.svg"
+    />
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --surface-soft: #f8faff;
+        --text: #172033;
+        --muted: #4d5d7f;
+        --accent: #2f5dff;
+        --accent-hover: #2549c7;
+        --border: #dde5f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #ebf1fc 0px, var(--bg) 280px);
+      }
+
+      .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      .hero {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 18px;
+        align-items: start;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+        line-height: 1.15;
+      }
+
+      .headline {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 1.04rem;
+      }
+
+      .meta {
+        background: var(--surface-soft);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px;
+      }
+
+      .meta p {
+        margin: 0 0 7px;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 18px;
+      }
+
+      .full {
+        grid-column: 1 / -1;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1.08rem;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        padding: 0.36rem 0.62rem;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--surface-soft);
+        font-size: 0.86rem;
+        color: #32456d;
+        font-weight: 600;
+      }
+
+      .timeline-item + .timeline-item {
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 1px dashed var(--border);
+      }
+
+      .timeline-title {
+        margin: 0;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .timeline-meta {
+        margin: 3px 0 6px;
+        color: #60729a;
+        font-size: 0.92rem;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      footer {
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.9rem;
+        padding: 16px 0 4px;
+      }
+
+      @media (max-width: 850px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Steije G.G. Jansen op de Haar</h1>
+          <p class="headline">
+            Analytische en leergierige IT- en data-georiënteerde starter met
+            sterke affiniteit met technologie, softwareontwikkeling en
+            datagedreven werken.
+          </p>
+        </div>
+        <aside class="meta">
+          <p><strong>Nationaliteit:</strong> Nederlands</p>
+          <p><strong>Geboortedatum:</strong> 2 juni 1995</p>
+          <p>
+            <strong>Talen:</strong> Nederlands (uitstekend), Engels
+            (uitstekend), Italiaans (goed), Frans (goed)
+          </p>
+        </aside>
+      </section>
+
+      <section class="grid">
+        <article class="card full">
+          <h2>Profiel</h2>
+          <p>
+            Ervaren met Python, Git, Linux-basisgebruik, SQL, data-analyse,
+            modelleren en werken binnen complexe technische omgevingen. Sterk
+            in logisch redeneren, nauwkeurig werken en nieuwe tools snel eigen
+            maken.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Technische Vaardigheden</h2>
+          <div class="tags">
+            <span class="tag">Python (OOP, data-analyse, numerieke modellen)</span>
+            <span class="tag">Git & versiebeheer</span>
+            <span class="tag">Linux & Bash</span>
+            <span class="tag">SQL & SQLite</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">Go backend</span>
+            <span class="tag">Godot development</span>
+            <span class="tag">ArcGIS & dataverwerking</span>
+            <span class="tag">Testing & documentatie</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Opleiding</h2>
+          <div class="timeline-item">
+            <p class="timeline-title">Bachelor Aardwetenschappen (niet afgemaakt)</p>
+            <p class="timeline-meta">2015 – 2020 · Vrije Universiteit Amsterdam</p>
+            <p>
+              Profiel Diepe Aarde, met sterke analytische basis in
+              data-analyse, modellering, GIS, Python en geavanceerde
+              observatiemethoden.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-title">VWO (N&T / N&G, versterkt Italiaans)</p>
+            <p class="timeline-meta">2008 – 2015 · Amsterdams Lyceum</p>
+          </div>
+        </article>
+
+        <article class="card full">
+          <h2>Softwareprojecten</h2>
+          <div class="timeline-item">
+            <p class="timeline-title">Python aandelenmarkt backtesting-model</p>
+            <ul>
+              <li>Data-invoer, strategie-analyse en resultaatvisualisatie</li>
+              <li>Integratie met een Discord-bot</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-title">Multiplayer kaartspel</p>
+            <ul>
+              <li>Go-server gebouwd met functionele principes</li>
+              <li>WebSockets, game-state management en SQLite-database</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-title">Godot projecten</p>
+            <ul>
+              <li>Game-logica, netwerkcommunicatie en AI-gedrag</li>
+              <li>Systeemontwerp en iteratieve ontwikkeling</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card full">
+          <h2>Onderzoekservaring</h2>
+          <div class="timeline-item">
+            <p class="timeline-title">Geologisch veldwerk Spanje</p>
+            <p class="timeline-meta">2015</p>
+            <p>
+              Uitgebreide dataverzameling, structureren van datasets,
+              documentatie en integratie van meerdere databronnen voor
+              geologische kartografie.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-title">Geologisch veldwerk Nederland/Europa</p>
+            <p class="timeline-meta">2016</p>
+            <p>
+              Geavanceerde dataverzameling, structurele metingen, digitale
+              analyses, modelleren in ArcGIS en interpretatie van digital
+              elevation models.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-title">Bachelorprojecten (niet afgerond)</p>
+            <p class="timeline-meta">2018 – 2019</p>
+            <ul>
+              <li>Spectrometrische instrumentatie, data-analyse en labwerk</li>
+              <li>Ontwikkeling van een numeriek subductiemodel in Python</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Werkervaring</h2>
+          <div class="timeline-item">
+            <p class="timeline-title">Urker Visboer en Praxis</p>
+            <p class="timeline-meta">2017 – 2018</p>
+            <p>
+              Klantcontact, logistiek en probleemoplossend werken in dynamische
+              omgevingen.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Stage & Overig</h2>
+          <div class="timeline-item">
+            <p class="timeline-title">Botenloods de Levant</p>
+            <p class="timeline-meta">2015 – 2016</p>
+            <p>
+              Restauratie van historische schepen, nauwkeurig werken en
+              praktische projectervaring.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-title">Rijbewijs</p>
+            <p class="timeline-meta">Categorie B</p>
+          </div>
+        </article>
+      </section>
+
+      <footer>© <span id="year"></span> Steije G.G. Jansen op de Haar</footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
