@@ -3,4 +3,4 @@ description: Curriculum vitae and professional profile.
 theme: jekyll-theme-minimal
 show_downloads: false
 exclude:
-	- README.md
+  - README.md
